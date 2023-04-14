@@ -1,0 +1,21 @@
+public class Coche {
+    private int numeroPuertas;
+    
+    public Coche() {
+        this.numeroPuertas = 0;
+    }
+    
+    public void anadirPuerta() {
+        this.numeroPuertas++;
+    }
+    
+    public int getNumeroPuertas() {
+        return this.numeroPuertas;
+    }
+    
+    public static void main(String[] args) {
+        Coche miCoche = new Coche();
+        miCoche.anadirPuerta();
+        System.out.println(miCoche.getNumeroPuertas()); // Salida: 1
+    }
+}
